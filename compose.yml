@@ -1,0 +1,21 @@
+services:
+  mc:
+    image: itzg/minecraft-server:latest
+    pull_policy: daily
+    tty: true
+    stdin_open: true
+    ports:
+      - 25565:25565
+    environment:
+      EULA: "TRUE"
+      INIT_MEMORY: "1G"
+      MAX_MEMORY: "1G"
+      SIMULATION_DISTANCE: 16
+      MAX_PLAYERS: 2
+      MODE: "survival"
+      DIFFICULTY: "hard"
+      HARDCORE: "TRUE"
+      SERVER_NAME: "hardcore-server"
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      - ./data:/data
