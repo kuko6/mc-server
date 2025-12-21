@@ -9,14 +9,14 @@ SERVICE="${SERVICE:-mc}"
 
 CMD=""
 if command -v docker-compose >/dev/null 2>&1; then
-  echo "using docker-compose"
+  echo "Using docker-compose"
   CMD="docker-compose"
 # elif command -v podman-compose >/dev/null 2>&1; then
-#   echo "using podman-compose"
+#   echo "Using podman-compose"
 #   CMD="podman-compose"
 else
   echo "docker-compose isnt available exists"
-  # echo "neither podman-compose nor docker-compose exists"
+  # echo "Neither podman-compose nor docker-compose exists"
   exit 1
 fi
 

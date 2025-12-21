@@ -17,3 +17,8 @@ Quick world restart:
 ```sh
 ./restart_world.sh
 ```
+
+View logs:
+```sh
+docker-compose logs -f mc
+```
