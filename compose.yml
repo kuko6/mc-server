@@ -1,6 +1,6 @@
 services:
   mc:
-    image: itzg/minecraft-server:latest
+    image: docker.io/itzg/minecraft-server:latest
     pull_policy: daily
     tty: true
     stdin_open: true
@@ -11,6 +11,7 @@ services:
       MEMORY: "2G"
       SIMULATION_DISTANCE: 12
       MAX_PLAYERS: 2
+      VERSION: "LATEST"
       MODE: "survival"
       DIFFICULTY: "hard"
       HARDCORE: "TRUE"
