@@ -1,4 +1,4 @@
-Docker setup on linux:
+Quick docker setup on linux:
 ```sh
 # let docker run without sudo
 sudo usermod -aG docker $USER
@@ -13,7 +13,7 @@ Start the server:
 docker-compose up
 ```
 
-Quick world restart:
+World restart (might require sudo):
 ```sh
 ./restart_world.sh
 ```
